@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Go Loop Audio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="main-links">
+            <div id="logo">
+                <div>Go Loop</div>
+                <div>Audio</div>
+            </div>
+            <div id="links">
+                <a href="#software">Software</a> |
+                <a href="#technology">Technology</a> |
+                <a href="#studio">Studio</a> |
+                <a href="#production">Production</a> |
+                <a href="#contact-us">Contact Us</a>
+            </div>
+        </nav>
+        </header>
+        <section id="about">
+            <p>Go Loop Audio provide technical services to the music production and related creative industries<p>
+        </section>
+        <section id="software">
+            <h1>Software</h1>
+            <p>We have many years experience writing audio software powering real-time audio mixing, DAW plugins, hardware configuration apps, digitial audio routing, 
+                audio metadata management and much more. We focus on the system programming level languages, C and C++, using cross-platform libraries like the JUCE framework to 
+                be able to target Windows, macOS, Linux and Embedded operating systems. Whether you need help maintaining/improving existing software or would like to write new software
+                we can help you out!</p>
+        </section>
+        <section id="technology">
+            <h1>Technology</h1>
+            <p>We are industry leading experts in all the latest audio technology protocols. Professional studios often span multiple technologies such as MIDI, OSC, MusicXML, 
+                Timecode, MADI, SPDIF, SMPTE/MTC, Sync, Dante/Ravenna, TSL UMD, SNMP and TCP/IP + UDP. Whether you need help in choosing the best in class producsts that handle these protocls, or
+                you need help advising bridging or transitioning from legacy to emerging techlogies, or writing custom software to integrate with existing technology, we have you covered.</p>
+        </section>
+         <section id="studio">
+            <h1>Studio</h1>
+            <p>Choosing the right products to fit your creative space can optmise your creative output and alleviate technical headchaes that would otherwise distract you from your main purpose.
+                Following a brief consultation, we can advise on the product purchases, and following on help install, configure and maintain those systems to keep them riunning smoothly so that you can 
+                focus on projects and forget about the tech.
+
+                If you want to stay focussed on your artist vision we can assist you on the technical side,
+                whether it be recording studio set-ups, digital audio networking (Dante etc.), computer solutions, back-up requirements, website technology.
+            </p>
+        </section>
+        <section id="production">
+            <h1>Production</h1>
+            <p>If you require professional help ecording, mixing or mastering your music/audio projects, we can assist you with our qualified music production engineers.
+                We can consult on the equipment and software that best suits your project and budget to achieve the best highest quality recordings possible.
+                We also provide training with recording, mixing and mastering to help you become the artist you want to be! If you prefer, we can also take care of this 
+                for you and can accomodate solo singer-songwriter musicians or voice over artists with our own professional equipment and high-quality premium audio interface.
+                We also offer a 25% discount to unsigned artists, so please get in touch.
+            </p>
+        </section>
+        <section id="contact-us" display="flex" flex-direction="column">
+            <!-- These images are currently taken from the following free source: https://magecdn.com/tools/social -->
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                    <label for="name">Your Name: </label><input id="name" type="text"  required />
+                    <label for="email">Your Email: </label><input id="email" type="email"  required />
+                    <label for="message">Message:</label><textarea id="message" cols="80" rows="10"></textarea>
+                    <button type="submit" onclick="sendMail(document.getElementById('name') ?? '', document.getElementById('email') ?? '', document.getElementById('message') ?? '')">Submit</button>
+            </div>
+        </section>
+        <footer>
+                <p>© 2026 Go Loop Audio Limited.</p>
+                <p>Follow us on social media</p>
+                <a href="https://www.youtube.com/@GoLoopAudio" target="_blank" rel="noopener noreferrer"><img height="50" src="https://s.magecdn.com/social/tc-youtube.svg"></a>
+                <a href="https://www.instagram.com/go.loop.audio/" target="_blank" rel="noopener noreferrer"><img height="50" src="https://s.magecdn.com/social/tc-instagram.svg"></a>
+        </footer>
+    </body>
+
+</html>
