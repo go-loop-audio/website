@@ -1,9 +1,18 @@
 <html>
     <head>
         <title>Go Loop Audio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (
+                function()
+                {
+                    emailjs.init({publicKey: "9IeVb7eWPXmvqF6ba"});
+                }
+            )();
         </script>
         <script src="js/main.js"></script>
     </head>
@@ -55,21 +64,20 @@
                 We can consult on the equipment and software that best suits your project and budget to achieve the best highest quality recordings possible.
                 We also provide training with recording, mixing and mastering to help you become the artist you want to be! If you prefer, we can also take care of this 
                 for you and can accomodate solo singer-songwriter musicians or voice over artists with our own professional equipment and high-quality premium audio interface.
-                We also offer a 25% discount to unsigned artists, so please get in touch.
             </p>
         </section>
         <section id="contact-us" display="flex" flex-direction="column">
             <!-- These images are currently taken from the following free source: https://magecdn.com/tools/social -->
             <h1>Contact Us</h1>
             <form id="contact-form">
-                    <label for="name">Your Name: </label><input id="name" type="text"  required />
-                    <label for="email">Your Email: </label><input id="email" type="email"  required />
+                    <label for="name">Your Name: </label><input id="name" type="text" />
+                    <label for="email">Your Email: </label><input id="email" type="email" />
                     <label for="message">Message:</label><textarea id="message" cols="80" rows="10"></textarea>
-                    <button type="submit" onclick="sendMail(document.getElementById('name') ?? '', document.getElementById('email') ?? '', document.getElementById('message') ?? '')">Submit</button>
+                    <button type="button" onclick="sendMail()">Send</button>
             </div>
         </section>
         <footer>
-                <p>© 2026 Go Loop Audio Limited.</p>
+                <p>© 2026 Go Loop Audio</p>
                 <p>Follow us on social media</p>
                 <a href="https://www.youtube.com/@GoLoopAudio" target="_blank" rel="noopener noreferrer"><img height="50" src="https://s.magecdn.com/social/tc-youtube.svg"></a>
                 <a href="https://www.instagram.com/go.loop.audio/" target="_blank" rel="noopener noreferrer"><img height="50" src="https://s.magecdn.com/social/tc-instagram.svg"></a>
